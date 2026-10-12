@@ -1,0 +1,62 @@
+<p>about works!</p>
+
+<div class="class text-center">
+    <b>Attribute Directives</b>
+    <div [ngClass]="isActive? 'active' : 'inactive'">
+        User Status
+    </div>
+
+    <hr class="m-5">
+    <b>Structural Directives</b>
+    <!-- <p *ngIf="isLoggedIn"> 
+        Welcome back!
+    </p> -->
+
+    @if(isLoggedIn) {
+        <p> 
+            Welcome back!
+        </p>
+    }
+
+    <ul>
+        <!-- <li *ngFor="let user of users; index as i">
+            {{ i + 1 }}. {{ user }}
+        </li> -->
+        @for (user of users; track $index) {
+            <li>
+               {{ user }}
+            </li>
+        }@empty {
+            <li>No User Found</li>
+        }
+    </ul>
+
+
+
+    <!-- <div [ngSwitch]="status">
+        <p *ngSwitchCase="'active'">User is active</p>
+        <p *ngSwitchCase="'inactive'">User is inactive</p>
+        <p *ngSwitchDefault>User status unknown</p>
+    </div> -->
+
+    @switch(status){
+        @case('active'){
+            <p>User is active</p>
+        }
+        @case ('inactive') {
+            <p>User is inactive</p>
+        }
+        @default {
+            <p>User Status unknown</p>
+        }
+    }
+
+        <b>
+            Custom Directives
+        </b>
+        <p appTextStyle>
+            Example of Custom Directive.
+        </p>
+
+    
+</div>

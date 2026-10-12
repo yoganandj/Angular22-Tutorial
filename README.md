@@ -57,3 +57,30 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+# What is Directive
+
+In Angular, a directive is a class that adds behaviour to an HTML element or an Angular component. It can change an element's appearance, behaviour, or how content is displayed.
+
+For example, suppose you want to:
+
+Change a paragraph's background colour when the user hovers over it.
+Display a message only when a condition is true.
+Display a list of students dynamically.
+Disable a button based on a condition.
+
+------------------------------------------------------------
+
+ ──────
+  ### The 3 Types of Directives
+
+   Type                     | Purpose                                                       | Has Tem… | Examples
+  --------------------------|---------------------------------------------------------------|----------|-------------------------------------------------
+   1. Components            | Building blocks of the UI with an associated view             |   Yes    | App, Login, Product
+   2. Attribute Directives  | Modifies the appearance or behavior of existing elements      |    No    | ngClass, ngStyle, [(ngModel)], RouterLink
+   3. Structural Directives | Alters the DOM structure by adding, removing, or replacing    |    No    | *ngIf, *ngFor, *ngComponentOutlet,
+                            | elements                                                      |          | *ngTemplateOutlet
+  ──────                             |
+
+
