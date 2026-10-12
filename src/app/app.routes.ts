@@ -12,11 +12,16 @@ import { Profile } from './pages/profile/profile';
 import { Dashboard } from './pages/dashboard/dashboard';
 import { authGuard } from './guards/auth-guard';
 import { dashboardMatchGuard } from './guards/dashboard-match-guard';
+import { Signal } from './pages/signal/signal';
 
 export const routes: Routes = [
     {
         path: '',
         component: Login
+    },
+    {
+        path: 'pages/signal',
+        component: Signal
     },
     {
         path: 'pages/login',

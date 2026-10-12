@@ -10,7 +10,7 @@ export interface ProductItem {
 }
 
 @Component({
-  imports: [RouterLink],
+  imports: [],
   selector: 'app-product',
   styleUrl: './product.css',
   templateUrl: './product.html',
